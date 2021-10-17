@@ -4,7 +4,10 @@ class Loop {
     public static void main(String[] args) {
 //        Loop.calculateTimes();
 //        Loop.compareWithZero();
-        Loop.isNarcissistic();
+//        Loop.isNarcissistic();
+//        Loop.whatWillPrint();
+//        Loop.getNumCannotPlus();
+//        Loop.getAlphabet();
     }
 
     // 1.
@@ -78,5 +81,55 @@ class Loop {
 //            length++;
 //        }
 //        return length;
+    }
+
+    // 4.
+    private static void whatWillPrint()
+    {
+        int m = 0, n = 3;
+        if (m > 0) {
+            if (n > 2) {
+                System.out.println("OK1");
+            } else {
+                System.out.println("OK2");
+            }
+        }
+    }
+
+    // 5.
+    private static void getNumCannotPlus()
+    {
+        int maxNum = 100;
+        int count = 1;
+        for (int num = 1; num <= maxNum; num++) {
+            if (num % 5 != 0) {
+                if (count % 5 == 0) {
+                    System.out.println(num);
+                } else {
+                    if (num > 9) {
+                        System.out.print(num + " ");
+                    } else {
+                        System.out.print(num + "  ");
+                    }
+                }
+                count++;
+            }
+        }
+    }
+
+    // 6.
+    private static void getAlphabet()
+    {
+        int lowerA = new Integer('a');
+        int lowerZ = new Integer('z');
+        int UpperA = new Integer('A');
+        int UpperZ = new Integer('Z');
+        for (int i = lowerA; i <= lowerZ; i++) {
+            System.out.print((char) i + " ");
+        }
+        System.out.println("");
+        for (int i = UpperA; i <= UpperZ; i++) {
+            System.out.print((char) i + " ");
+        }
     }
 }
