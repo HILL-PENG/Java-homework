@@ -120,10 +120,11 @@ class Loop {
     // 6.
     private static void getAlphabet()
     {
-        int lowerA = new Integer('a');
-        int lowerZ = new Integer('z');
-        int UpperA = new Integer('A');
-        int UpperZ = new Integer('Z');
+        int lowerA = (int) 'a';
+        int lowerZ = (int) 'z';
+        int UpperA = (int) 'A';
+        int UpperZ = (int) 'Z';
+        System.out.println(lowerA);
         for (int i = lowerA; i <= lowerZ; i++) {
             System.out.print((char) i + " ");
         }
