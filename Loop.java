@@ -48,10 +48,14 @@ class Loop {
         int num = input.nextInt();
         int length = Loop.getNumLength(num);
         String strOfNum = String.valueOf(num);
-        char[] charOfNum = strOfNum.toCharArray();
+        int[] arrOfNum = new int[strOfNum.length()];
+        for (int i = 0; i < strOfNum.length(); i++) {
+            Character ch = strOfNum.charAt(i);
+            arrOfNum[i] = Integer.parseInt(ch.toString());
+        }
         int temp = 0;
         for (int i = 0; i < length; i++) {
-            temp += (charOfNum[i] * charOfNum[i] * charOfNum[i]);
+            temp += (arrOfNum[i] * arrOfNum[i] * arrOfNum[i]);
         }
         String res = new String();
         if (num == temp) {
