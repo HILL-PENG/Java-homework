@@ -8,6 +8,7 @@ class Loop {
 //        Loop.whatWillPrint();
 //        Loop.getNumCannotPlus();
 //        Loop.getAlphabet();
+        Loop.getAddition();
     }
 
     // 1.
@@ -132,5 +133,11 @@ class Loop {
         for (int i = UpperA; i <= UpperZ; i++) {
             System.out.print((char) i + " ");
         }
+    }
+
+    // 7.
+    public static void getAddition() {
+        int maxNum = 100;
+        double res
     }
 }
