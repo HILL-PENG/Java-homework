@@ -1,7 +1,9 @@
+package Array;
+
 public class ArrayReverse {
     public static void main(String[] args) {
         int[] arr = {11, 22, 33, 44, 55, 66, 77};
-//        ArrayReverse.swap(arr);
+//        Array.ArrayReverse.swap(arr);
         ArrayReverse.doublePointer(arr);
     }
 

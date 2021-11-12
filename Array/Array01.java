@@ -1,12 +1,13 @@
-import java.util.Arrays;
+package Array;
+
 import java.util.Scanner;
 
 public class Array01 {
     public static void main(String[] args) {
-//        double average = Array01.getAverage();
+//        double average = Array.Array01.getAverage();
 //        System.out.println("the average of these num is " + average);
 
-//        Array01.getSum();
+//        Array.Array01.getSum();
 
         Array01.getAlphabet();
     }
