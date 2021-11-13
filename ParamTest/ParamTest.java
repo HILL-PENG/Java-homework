@@ -1,6 +1,8 @@
 package ParamTest;
 
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
+
+import com.sun.istack.internal.NotNull;
 
 /**
  * This program demonstrates parameter passing in Java.
