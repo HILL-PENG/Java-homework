@@ -12,6 +12,9 @@ public class Extentd {
         System.out.println(s instanceof People);
         System.out.println(p instanceof Student);
         System.out.println(p1 instanceof Student);
+        System.out.println(s.getName("haha"));
+        System.out.println(s.getName());
+
     }
 }
 
@@ -58,6 +61,16 @@ class Student extends People {
 
     public int getSelfMaxAge() {
         return maxAge;
+    }
+
+    @Override
+    public String getName() {
+//        return super.getName();
+        return "new name";
+    }
+
+    public String getName(String name) {
+        return name;
     }
 }
 
